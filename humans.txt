@@ -3,13 +3,16 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Lawrence Humphrey -- Developer -- lawrencehumphrey.com
+    Noah Lafferty -- Developer -- noahlafferty.me
+    Lisa Vuong -- Illicit Design .gif -- lisavuong.com
 
 # THANKS
 
-    <name>
+    mom <3
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
+    CSS3, HTML5, SCSS
     Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Gulp.js, jeet
