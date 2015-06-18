@@ -504,7 +504,7 @@ figure {
     overflow: hidden;
     background: #3085a3;
     text-align: center;
-    cursor: pointer;
+    // cursor: pointer;
 
     img {
         position: relative;
@@ -601,16 +601,17 @@ figure {
         transform: translate3d(0,10px,0);
     }
 
-    &:hover h5 {
-        // color: #fff;
-        opacity: 1;
-        transform: translate3d(0,-50%,0) translate3d(0,-10px,0);
-    }
+    &:hover, &.hover {
+        h5 {
+            // color: #fff;
+            opacity: 1;
+            transform: translate3d(0,-50%,0) translate3d(0,-10px,0);
+        }
 
-    &:hover figcaption::before ,
-    &:hover p {
-        opacity: 1;
-        transform: translate3d(0,0,0);
+        figcaption::before, p {
+            opacity: 1;
+            transform: translate3d(0,0,0);
+        }
     }
 }
 

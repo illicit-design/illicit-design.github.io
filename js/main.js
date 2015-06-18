@@ -33,3 +33,28 @@ $('.section-container').imagesLoaded().always(function() {
 		$('.preloader').addClass('hidden');
 	}, 1000);
 });
+
+(function(window){
+    if (Modernizr.touch) {
+        [].slice.call(document.querySelectorAll("figure")).forEach(function(el,i){
+            var fingerMove = false;
+            el.addEventListener("touchmove",function(e){
+                e.stopPropagation();
+                fingerMove = true;
+            });
+            el.addEventListener("touchstart",function(e){
+                e.stopPropagation();
+                fingerMove = false;
+            });
+            el.addEventListener("touchend",function(e){
+                e.stopPropagation();
+                if (fingerMove === false) {
+                    classie.toggle(el,"hover");
+                }
+            });
+
+        });
+
+    }
+
+})(window);

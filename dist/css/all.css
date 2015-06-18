@@ -1328,7 +1328,6 @@ figure {
   overflow: hidden;
   background: #3085a3;
   text-align: center;
-  cursor: pointer;
   /* Anchor will cover the whole item by default */ }
   figure img {
     position: relative;
@@ -1406,13 +1405,12 @@ figure {
   -webkit-transform: translate3d(0, 10px, 0);
   transform: translate3d(0, 10px, 0); }
 
-.effect-sadie:hover h5 {
+.effect-sadie:hover h5, .effect-sadie.hover h5 {
   opacity: 1;
   -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -10px, 0);
   transform: translate3d(0, -50%, 0) translate3d(0, -10px, 0); }
 
-.effect-sadie:hover figcaption::before,
-.effect-sadie:hover p {
+.effect-sadie:hover figcaption::before, .effect-sadie:hover p, .effect-sadie.hover figcaption::before, .effect-sadie.hover p {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
