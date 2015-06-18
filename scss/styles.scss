@@ -29,27 +29,29 @@ $glitch-red: rgba(255,0,0,0.6);
 
 .preloader {
     background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+
     width: 100vw;
     height: 100vh;
     margin: 0;
     z-index: 999;
-  
-    .loading-text {
+
+    color: #fff;
+
+    transition: opacity 1s;
+
+    img {
         position: absolute;
         top: 50%;
         left: 50%;
+
         transform: translate(-50%, -50%);
-        // top: 50px;
-        text-align: center;
-        width: 100%;
-        color: #fff;
-        font-size: 13px;
-        font-family: sans-serif;
-        letter-spacing: 3px;
-        line-height: 10px;
-        height: 10px;
-        animation: fade 1s ease 0s infinite;
-        z-index: 1000;
+    }
+
+    &.loaded {
+        opacity: 0;
     }
 }
 

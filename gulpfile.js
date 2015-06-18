@@ -24,7 +24,7 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('css'));
 });
 
-// Concatenate & Minify JS
+// Concatenate & Minify CSS
 gulp.task('styles', function() {
     return gulp.src('css/*.css')
         .pipe(concat('all.css'))
