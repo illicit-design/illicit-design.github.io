@@ -931,6 +931,8 @@ th {
     transform: translate(-50%, -50%); }
   .preloader.loaded {
     opacity: 0; }
+  .preloader.hidden {
+    display: none; }
 
 @-webkit-keyframes fade {
   0% {

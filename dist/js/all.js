@@ -29,6 +29,9 @@ $('.section-container').imagesLoaded().always(function() {
 	console.log('images have loaded');
 
 	$('.preloader').addClass('loaded');
+	setTimeout(function() {
+		$('.preloader').addClass('hidden');
+	}, 1000);
 });
 // Avoid `console` errors in browsers that lack a console.
 (function() {

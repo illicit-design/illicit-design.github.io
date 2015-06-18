@@ -29,4 +29,7 @@ $('.section-container').imagesLoaded().always(function() {
 	console.log('images have loaded');
 
 	$('.preloader').addClass('loaded');
+	setTimeout(function() {
+		$('.preloader').addClass('hidden');
+	}, 1000);
 });
